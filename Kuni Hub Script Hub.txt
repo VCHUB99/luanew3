@@ -78,7 +78,7 @@ local title = Instance.new("TextLabel")
 title.Size = UDim2.new(1, -70, 0, 32)
 title.Position = UDim2.new(0, 10, 0, 10)
 title.BackgroundTransparency = 1
-title.Text = "Yawi Library"
+title.Text = "Shuryu Library"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.Font = Enum.Font.GothamBlack
 title.TextSize = 22
@@ -91,7 +91,7 @@ local footer = Instance.new("TextLabel")
 footer.Size = UDim2.new(1, 0, 0, 16)
 footer.Position = UDim2.new(0, 0, 1, -20)
 footer.BackgroundTransparency = 1
-footer.Text = "Tiktok: @yawiyawiyawiz1"
+footer.Text = "Tiktok: @shuryu_0"
 footer.TextColor3 = Color3.fromRGB(160, 160, 160)
 footer.Font = Enum.Font.Gotham
 footer.TextSize = 12
@@ -128,14 +128,13 @@ local function createButton(parent, posY, text)
     return btn
 end
 
--- Button 1: Dark Spawner
+-- Button 1: Lulu Hub
 local button1 = createButton(frame, 50, "Run Dark Spawner")
 button1.MouseButton1Click:Connect(function()
 	button1.Text = "Loading..."
 	button1.BackgroundTransparency = 0.5
 	local success, err = pcall(function()
-		local Spawner = loadstring(game:HttpGet("https://gitlab.com/darkiedarkie/dark/-/raw/main/Spawner.lua"))()
-		Spawner.Load()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/VCHUB99/luanew1/refs/heads/main/message%20(8).txt"))()
 	end)
 	button1.Text = success and "Loaded!" or "Failed!"
 	if not success then warn("[Kuni Hub] Error: " .. tostring(err)) end
@@ -144,12 +143,12 @@ button1.MouseButton1Click:Connect(function()
 	button1.BackgroundTransparency = 0
 end)
 -- Button 2
-local button2 = createButton(frame, 82, "Run Project Reverse")
+local button2 = createButton(frame, 82, "Qxior Dupe Hub")
 button2.MouseButton1Click:Connect(function()
     button2.Text = "Loading..."
     button2.BackgroundTransparency = 0.5
     local success, err = pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/veryimportantrr/x/refs/heads/main/gag_visual.lua", true))("discord.gg/csxu2nCkw9")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Dark-Spawner-Hubs/Dupe/refs/heads/main/DupeScript"))()
     end)
     button2.Text = success and "Loaded!" or "Failed!"
     if not success then warn("[Kuni Hub] Error: "..tostring(err)) end
@@ -188,13 +187,13 @@ button4.MouseButton1Click:Connect(function()
     button4.BackgroundTransparency = 0
 end)
 
--- Button 5: Run Pet Weight Changer
+-- Button 5: Pet Weight Changer
 local button5 = createButton(frame, 178, "Run Pet Weight Changer")
 button5.MouseButton1Click:Connect(function()
     button5.Text = "Loading..."
     button5.BackgroundTransparency = 0.5
     local success, err = pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/KuniDevLua/GrowAGarden/refs/heads/main/petsizechanger"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VCHUB99/Pet-Enlarge-New/refs/heads/main/Script"))()
     end)
     button5.Text = success and "Loaded!" or "Failed!"
     if not success then warn("[Kuni Hub] Error: "..tostring(err)) end
@@ -280,4 +279,5 @@ end)
 -- SKIDDED BY SIGMA @rizzify101
 -- SKIDDED BY SIGMA @rizzify101
 -- SKIDDED BY SIGMA @rizzify101
+
 -- SKIDDED BY SIGMA @rizzify101
